@@ -20,7 +20,7 @@ public class _8_Patterns {
             System.out.println();
         }
         System.out.println("======================");
-        n = 10; // hi
+        n = 10; // hiii
         for(int i = 0; i < n;i++){
             for(int j = 0; j < n; j++){
                 if(j == 0 || j == n-1 || i == (n-1)/2){
