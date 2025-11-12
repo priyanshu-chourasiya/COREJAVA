@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2 OOP/2 OOP.iml" filepath="$PROJECT_DIR$/2 OOP/2 OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/3 INTERFACE AND LAMBDA EXPRESSION/3 INTERFACE AND LAMBDA EXPRESSION.iml" filepath="$PROJECT_DIR$/3 INTERFACE AND LAMBDA EXPRESSION/3 INTERFACE AND LAMBDA EXPRESSION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA ENTERPRISE.iml" filepath="$PROJECT_DIR$/JAVA ENTERPRISE.iml" />
+    </modules>
+  </component>
+</project>

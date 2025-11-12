@@ -18,8 +18,8 @@ public class _2_TyepCasting {
         // System.out.println(d);
 
         double c = 45.5; // loss of precition
-        d = (int)c;
-        System.out.println(d);
+        //d = (int)c;
+        //System.out.println(d);
         
     }
 }
