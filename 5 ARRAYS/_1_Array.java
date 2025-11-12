@@ -16,7 +16,7 @@ public class _1_Array {
 
         Scanner sc = new Scanner(System.in);
         // System.out.println("Enter the marks of student : "); 
-        // marks[0] = sc.nextInt();
+        // marks[0] = sc.nextInt();                      ;
 
         for (int i = 0; i < 5;i++) {
             System.out.print("Enter the marks of student : " + i + " : ");
