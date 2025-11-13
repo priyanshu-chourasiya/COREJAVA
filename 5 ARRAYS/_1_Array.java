@@ -6,7 +6,7 @@ public class _1_Array {
         // or
         int[] arr = new int[5];
         // marks[0] = 110;
-        // marks[1] = 920;
+        // marks[1] = 920;;;;
         // marks[2] = 102;
         // marks[3] = 190;
         // marks[4] = 130;
