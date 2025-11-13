@@ -10,6 +10,8 @@ public class _5_Strings {
 
         String s2 = "   Raja Ram Mohan Roy  ";
         System.out.println(s2);
-        System.out.println(s2.trim());
+        System.out.println(s2.trim()); // leading and trailing space (removes)
+        System.out.println(s2.stripTrailing()); // removes last spaces
+        System.out.println(s2.stripLeading());
     }
 }
