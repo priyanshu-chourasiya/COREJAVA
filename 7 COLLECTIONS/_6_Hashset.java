@@ -11,7 +11,7 @@ public class _6_Hashset {
         hs.add(75);
         hs.add(125);
         hs.add(175);  // duplicates are not allowed
-        System.out.println(hs);
-        
+        System.out.println(hs); // no order of insertion
+
     }
 }
