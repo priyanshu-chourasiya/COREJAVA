@@ -9,6 +9,6 @@ public class _3_Arraydequeue {
         ad1.add(15);
         ad1.add(48);
         ad1.add("ANC");
-        System.out.println(ad1);
+        System.out.println(ad1);// duplicates are allowed
     }
 }

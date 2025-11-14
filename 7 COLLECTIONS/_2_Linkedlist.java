@@ -21,6 +21,6 @@ public class _2_Linkedlist {
         System.out.println(ll1.peek());
         System.out.println(ll1.peekLast());
         System.out.println(ll1.poll()); // removes first element
-        System.out.println(ll1);
+        System.out.println(ll1); // duplicates are allowed
     }
 }
