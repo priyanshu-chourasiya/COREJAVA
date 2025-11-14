@@ -9,11 +9,23 @@ public class _5_Treeset {
         ts.add(150);
         ts.add(25);
         ts.add(75);
-        ts.add(125);
+        ts.add(125); 
         ts.add(175);
         System.out.println(ts); // sprted order // inorder
         System.out.println(ts.descendingSet()); // decending order
         // duplicates are not allowed
+
+        System.out.println(ts.ceiling(50)); // nearerst higher value than 50 
+        System.out.println(ts.higher(50));
+        System.out.println("-----------");
+        System.out.println(ts.ceiling(65)); 
+        System.out.println(ts.higher(65));
+        System.out.println("-----------");
+        System.out.println(ts.floor(45));
+        System.out.println(ts.lower(45));
+        System.out.println("-----------");
+        System.out.println(ts.tailSet(75));
+        System.out.println(ts.headSet(75));
     }
 }
 /*
