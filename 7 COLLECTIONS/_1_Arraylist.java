@@ -17,6 +17,8 @@ public class _1_Arraylist {
         al2.add(0,33);
         al2.addAll(al);
         System.out.println(al2);
+        System.out.println(al2.containsAll(al));
+        
     }
 }
 /*
