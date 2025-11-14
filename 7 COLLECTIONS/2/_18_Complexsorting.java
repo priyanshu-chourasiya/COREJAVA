@@ -1,9 +1,7 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
-class Cricketer{
+class Cricketer implements Comparable<Cricketer>{
     int age;
     String name;
     double avg;
@@ -25,24 +23,18 @@ class Cricketer{
         return sb.toString();
     }
 
-}
-// implements
-// anonymous inner class
-// lambda
-
-class Alpha implements Comparator<Cricketer>{
-
     @Override
-    public int compare(Cricketer o1,Cricketer o2){
-        if(o1.avg > o2.avg){
+    public int compareTo(Cricketer o){
+        if(this.avg > o.avg){
             return 1;
         }
         else{
             return -1;
         }
     }
+
 }
-public class _17_Complexsorting {
+public class _18_Complexsorting {
     public static void main(String[] args) {
         Cricketer c1 = new Cricketer(12, "Priyanshu", 55.2);
         Cricketer c2 = new Cricketer(13, "Priyan", 27.2);
@@ -53,13 +45,6 @@ public class _17_Complexsorting {
         c.add(c2);
         c.add(c3);
         System.out.println(c);
-        // Collections.sort(c); error 
-        System.out.println("After sorting : ----------------------");
-        Alpha a = new Alpha();
-        Collections.sort(c,a);
-        System.out.println(c);
-
-        
-
+        Collections.sort(c);
     }
 }
