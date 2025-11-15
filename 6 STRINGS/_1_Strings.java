@@ -25,4 +25,4 @@ public class _1_Strings {
         System.out.println(s7.equalsIgnoreCase(s8));
     }
 }
-// java is case sensitive language
+// java is case sensitive language // 

@@ -29,5 +29,5 @@ public class _1_Array {
 }
 /*
  * in java array is treated as an Object
- * 
+ *  // 
  */

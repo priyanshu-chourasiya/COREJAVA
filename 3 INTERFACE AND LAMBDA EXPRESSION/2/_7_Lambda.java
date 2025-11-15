@@ -36,5 +36,6 @@ public class _7_Lambda {
         // Phone ph = new Phone(); //not possible
         Person.Phone ph = new Person.Phone();
         ph.getDetails2();
+        //
     }
 }
