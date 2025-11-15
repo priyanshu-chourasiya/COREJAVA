@@ -4,7 +4,10 @@ class Animal{
     }
 }
 class Tiger extends Animal{
-    
+    // Overriding parent class method to suit child requirement 
+    // but no reaching the compiler or JVM
+    // comments are only till developer level
+    @Override
     public void animalUsuallyHuntsAndEat(){
         System.out.println("Tiger is eating");
     }
