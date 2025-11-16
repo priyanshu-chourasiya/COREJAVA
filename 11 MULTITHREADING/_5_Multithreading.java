@@ -63,10 +63,19 @@ public class _5_Multithreading {
         Thread t2 = new Thread(b);
         Thread t3 = new Thread(g);
 
+        System.out.println(t1.isAlive()); // false
+        System.out.println(t2.isAlive()); // false
+        System.out.println(t3.isAlive()); // false
+
         t1.start();
         t2.start();
         t3.start();
 
+        System.out.println(t1.isAlive()); // true
+        System.out.println(t2.isAlive()); // true
+        System.out.println(t3.isAlive()); // true
+
         System.out.println("Application terminated");
     }
 }
+// main thread always finishes first

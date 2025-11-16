@@ -69,8 +69,12 @@ public class _4_Multithreading {
 
         a.start();
         b.start();
-        g.start();
+        // g.start();
+        a.join();
+        b.join();
+        g.join(); // main thread have to wait until this thread is done and join main thread
 
+        g.start();
         System.out.println("Application terminated");
     }
 }
