@@ -1,7 +1,7 @@
 class MyCar implements Runnable{
     
     @Override
-    public void run(){
+    synchronized public void run(){
         try {
             System.out.println(Thread.currentThread().getName() + " has entered parking lot");
             Thread.sleep(4000);
@@ -14,7 +14,7 @@ class MyCar implements Runnable{
         }
     }
 }
-public class _7_Multithreading {
+public class _8_Multithreading {
     public static void main(String[] args) {
         MyCar mc = new MyCar();
 
@@ -32,17 +32,18 @@ public class _7_Multithreading {
 
         /*
          *  CHILD 1 has entered parking lot
-            CHILD 2 has entered parking lot
-            CHILD 3 has entered parking lot
             CHILD 1 has entered into car
-            CHILD 2 has entered into car
-            CHILD 3 has entered into car
-            CHILD 2 has stared to drive the car
             CHILD 1 has stared to drive the car
-            CHILD 3 has stared to drive the car
-            CHILD 2 has came back and parked the car
-            CHILD 3 has came back and parked the car
             CHILD 1 has came back and parked the car
+            CHILD 2 has entered parking lot
+            CHILD 2 has entered into car
+            CHILD 2 has stared to drive the car
+            CHILD 2 has came back and parked the car
+            CHILD 3 has entered parking lot
+            CHILD 3 has entered into car
+            CHILD 3 has stared to drive the car
+            CHILD 3 has came back and parked the car
          */
+
     }
 }
