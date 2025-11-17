@@ -79,3 +79,71 @@ public class _5_Multithreading {
     }
 }
 // main thread always finishes first
+/*
+PROGRAM SUMMARY
+This program demonstrates multithreading using the Runnable interface rather than subclassing Thread. Three independent tasks—banking, printing text, and printing symbols—are implemented in Alpha, Beta, and Gama. Each is wrapped inside a Thread object and executed concurrently.
+
+CONCEPTS DEMONSTRATED
+1. Runnable Interface
+   - Provides a clean separation between task logic and thread control.
+   - run() defines the activity executed when the thread starts.
+
+2. Thread Wrapping
+   - new Thread(runnable) binds a Runnable task to a Thread instance.
+   - start() initiates a new call stack executing run() asynchronously.
+
+3. isAlive() Method
+   - Queries whether a thread has started and is still running.
+   - Prints false before start() and true after start().
+
+4. Thread Scheduling
+   - main does not wait for any thread to finish.
+   - All three worker threads run independently while main exits immediately afterward.
+
+STRUCTURE AND ROLE OF EACH COMPONENT
+1. class Alpha implements Runnable
+   - Banking-related task.
+   - run() delegates to Banking().
+   - Banking() performs blocking input and prints status.
+
+2. class Beta implements Runnable
+   - Timed message-printing task.
+   - stars() loops three times with 4-second delays.
+
+3. class Gama implements Runnable
+   - Timed symbol-printing task.
+   - Importantmessage() loops three times with 4-second delays.
+
+4. Thread t1 = new Thread(a)
+   - Connects Alpha’s logic to an actual Thread object.
+
+5. isAlive() checks
+   - Before start(): all false because no thread has begun execution.
+   - After start(): all true while threads continue to run.
+
+6. main flow
+   - Prints start message.
+   - Instantiates Runnable tasks.
+   - Wraps each in Thread objects.
+   - Prints their alive status before starting.
+   - Starts all three.
+   - Prints alive status again while they run.
+   - Prints termination notice and exits without synchronization.
+
+CONTROL FLOW
+1. main prints “Application started”.
+2. Creates Alpha, Beta, Gama objects.
+3. Wraps each Runnable in a corresponding Thread.
+4. Prints alive-state checks (false).
+5. Calls start() on all three threads.
+6. Threads execute Banking(), stars(), and Importantmessage() concurrently.
+7. Prints alive-state checks (likely true at that moment).
+8. Prints “Application terminated”.
+9. main thread ends while worker threads continue running in parallel.
+
+EFFECT OF NO join()
+main terminates before Alpha, Beta, and Gama finish. Worker threads keep running until their loops and input operations complete.
+
+NOTES
+Each task executes concurrently; no sequencing or waits imposed by main.
+*/
