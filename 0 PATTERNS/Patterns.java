@@ -73,7 +73,7 @@ class Patterns {
             for(int j = 1 ; j<= noofspaces;j++){
                 System.out.print(" ");
             }
-            for(int j = n ; j >= 1; j--){
+            for(int j = n ; j >= i; j--){
                 System.out.print("*");
             }
             System.out.println();
