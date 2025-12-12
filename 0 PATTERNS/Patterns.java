@@ -4,7 +4,8 @@ class Patterns {
         // pattern2(5);
         // pattern3(5);
         // pattern4(5);
-        pattern5(5);
+        // pattern5(5);
+        pattern6(5);
     }
     static void pattern1(int n){
         for(int  i = 1; i <= n; i++){
@@ -49,6 +50,18 @@ class Patterns {
         for(int i = 1; i <= n; i++){
             for(int j = n; j >= i;j--){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern6(int n){
+        for(int i = 1; i <= n; i++){
+            int noofspaces = n - i;
+            for(int j = 1; j <= noofspaces;j++){
+                System.out.print(" ");
+            }
+            for(int j = 1; j <= i;j++){
+                System.out.print("*");
             }
             System.out.println();
         }
