@@ -6,7 +6,8 @@ class Patterns {
         // pattern4(5);
         // pattern5(5);
         // pattern6(5);
-        pattern7(5);
+        // pattern7(5);
+        pattern8(5);
     }
     static void pattern1(int n){
         for(int  i = 1; i <= n; i++){
@@ -75,6 +76,14 @@ class Patterns {
             }
             for(int j = n ; j >= i; j--){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    static void pattern8(int n){
+        for(int i = 1; i <= n; i++){
+            for(int j = n; j >= i; j--){
+                System.out.print(" * ");
             }
             System.out.println();
         }
