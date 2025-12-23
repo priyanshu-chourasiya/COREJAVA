@@ -8,7 +8,7 @@ class Calc{
         return a*b*c;
     }
     double mul(double a, double b,double c){
-        System.out.println("3 mthod");
+        System.out.println("3 method");
         return a*b;
     }
 }

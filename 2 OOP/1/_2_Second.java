@@ -15,7 +15,7 @@ class Calculator{
         int res = num1-num2;
         int n;
         System.out.println(res);
-        System.out.println(n);
+        //System.out.println(n);
         System.out.println(o);
     }
 }
